@@ -1,6 +1,8 @@
 # chemrxiv-summarize
 
-Summarize usage of ChemRxiv by using Figshare's API endpoint.
+Motivated by <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">makes me wonder about the stats at <a href="https://twitter.com/ChemRxiv?ref_src=twsrc%5Etfw">@ChemRxiv</a> <a href="https://t.co/Ml5X8F4ckJ">https://t.co/Ml5X8F4ckJ</a></p>&mdash; Egon Willighⓐgen (@egonwillighagen) <a href="https://twitter.com/egonwillighagen/status/1219193083792969728?ref_src=twsrc%5Etfw">January 20, 2020</a></blockquote>
+
+this repo summarize usage of ChemRxiv by using Figshare's API endpoint.
 
 I've already run the download script on 2020-01-20. The scripts
 can be run in this order to get nice charts.
