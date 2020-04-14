@@ -87,6 +87,10 @@ def download_full(api):
     os.makedirs(articles_long_directory, exist_ok=True)
     for filename in tqdm(os.listdir(articles_short_directory)):
         preprint_id = int(filename[:-len('.json')])
+        path = os.path.join(articles_long_directory, f'{preprint_id}.json')
+        if os.path.exists(path):
+            continue
+
         preprint = api.preprint(preprint_id)
-        with open(os.path.join(articles_long_directory, f'{preprint_id}.json'), 'w') as file:
+        with open(path, 'w') as file:
             json.dump(preprint, file, indent=2)
