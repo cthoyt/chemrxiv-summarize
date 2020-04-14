@@ -68,11 +68,11 @@ class ChemrxivAPI:
 
     def all_preprints(self):
         """Return a generator to all the chemRxiv articles_short"""
-        return self.query_generator(f'articles_short?institution={self.institution}')
+        return self.query_generator(f'articles?institution={self.institution}')
 
     def preprint(self, identifier):
         """Information on a given preprint."""
-        return self.query(f'articles_short/{identifier}')
+        return self.query(f'articles/{identifier}')
 
 
 def download_short(api):
