@@ -75,7 +75,10 @@ class ChemrxivAPI:
         return self.query(f'articles/{identifier}')
 
 
-def download_short(api):
+def download_short(api: Optional[ChemrxivAPI] = None) -> None:
+    if api is None:
+        api = ChemrxivAPI()
+
     os.makedirs(articles_short_directory, exist_ok=True)
     for preprint in tqdm(api.all_preprints(), desc='Getting all articles_short'):
         preprint_id = preprint['id']
@@ -83,7 +86,10 @@ def download_short(api):
             json.dump(preprint, file, indent=2)
 
 
-def download_full(api):
+def download_full(api: Optional[ChemrxivAPI] = None) -> None:
+    if api is None:
+        api = ChemrxivAPI()
+
     os.makedirs(articles_long_directory, exist_ok=True)
     for filename in tqdm(os.listdir(articles_short_directory)):
         preprint_id = int(filename[:-len('.json')])
