@@ -82,7 +82,10 @@ def download_short(api: Optional[ChemrxivAPI] = None) -> None:
     os.makedirs(articles_short_directory, exist_ok=True)
     for preprint in tqdm(api.all_preprints(), desc='Getting all articles_short'):
         preprint_id = preprint['id']
-        with open(os.path.join(articles_short_directory, f'{preprint_id}.json'), 'w') as file:
+        path = os.path.join(articles_short_directory, f'{preprint_id}.json')
+        if os.path.exists(path):
+            continue
+        with open(path, 'w') as file:
             json.dump(preprint, file, indent=2)
 
 
