@@ -2,6 +2,7 @@
 
 import json
 import os
+from typing import Optional
 
 import requests
 from tqdm import tqdm
