@@ -4,7 +4,7 @@ Motivated by <blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang=
 
 this repo summarize usage of ChemRxiv by using Figshare's API endpoint.
 
-I've already run the download script on 2020-01-20. The scripts
+I've already run the download script on 2020-11-02. The scripts
 can be run in this order to get nice charts.
 
 ```bash
