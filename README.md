@@ -17,6 +17,10 @@ python 03_visualize.py
 Downloading takes a bit of time (40 minutes, maybe?) but there's
 a tqdm bar to keep you entertained in the mean time.
 
+**See also** the [ChemRxiv dashboard](https://chemrxiv-dashboard.github.io)
+([source code](https://github.com/chemrxiv-dashboard/chemrxiv-dashboard.github.io))
+that displays similar statistics and is automatically updated daily.
+
 ## Charts
 
 How many authors have contributed per month to ChemRxiv?
