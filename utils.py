@@ -19,13 +19,13 @@ class ChemrxivAPI:
     """
 
     base = 'https://api.figshare.com/v2'
-    pagesize = 100
 
-    def __init__(self, token=None):
+    def __init__(self, token=None, page_size: Optional[int] = None):
         if token is None:
             with open(os.path.expanduser('~/.config/figshare/chemrxiv.txt'), 'r') as file:
                 token = file.read().strip()
 
+        self.page_size = page_size or 500
         #: corresponds to chemrxiv
         self.institution = 259
         self.token = token
@@ -48,10 +48,13 @@ class ChemrxivAPI:
         """Query for a list of items, with paging. Returns a generator."""
         if params is None:
             params = {}
-        n = 0
+
+        page = 1
         while True:
-            params.update({'limit': self.pagesize, 'offset': n})
+            params.update({'page_size': self.page_size, 'page': page})
             r = self.request(f'{self.base}/{query}', params=params)
+            if r.status_code == 400:
+                raise ValueError(r.json()['message'])
             r.raise_for_status()
             r = r.json()
 
@@ -65,7 +68,7 @@ class ChemrxivAPI:
                 return
 
             yield from r
-            n += self.pagesize
+            page += 1
 
     def all_preprints(self):
         """Return a generator to all the chemRxiv articles_short.
@@ -74,7 +77,7 @@ class ChemrxivAPI:
         """
         return self.query_generator('articles', params={'institution': self.institution})
 
-    def preprint(self, article_id: str):
+    def preprint(self, article_id):
         """Information on a given preprint.
 
         .. seealso:: https://docs.figshare.com/#public_article
