@@ -35,16 +35,16 @@ class ChemrxivAPI:
         r.raise_for_status()
 
     def request(self, url, *, params=None):
-        """Send a figshare API request"""
+        """Send a figshare API request."""
         return requests.get(url, headers=self.headers, params=params)
 
     def query(self, query, *, params=None):
-        """Perform a direct query"""
+        """Perform a direct query."""
         r = self.request(f'{self.base}/{query.lstrip("/")}', params=params)
         r.raise_for_status()
         return r.json()
 
-    def query_generator(self, query, method='get', params=None):
+    def query_generator(self, query, params=None):
         """Query for a list of items, with paging. Returns a generator."""
         if params is None:
             params = {}
@@ -68,12 +68,18 @@ class ChemrxivAPI:
             n += self.pagesize
 
     def all_preprints(self):
-        """Return a generator to all the chemRxiv articles_short"""
+        """Return a generator to all the chemRxiv articles_short.
+
+        .. seealso:: https://docs.figshare.com/#articles_list
+        """
         return self.query_generator('articles', params={'institution': self.institution})
 
-    def preprint(self, identifier):
-        """Information on a given preprint."""
-        return self.query(f'articles/{identifier}')
+    def preprint(self, article_id: str):
+        """Information on a given preprint.
+
+        .. seealso:: https://docs.figshare.com/#public_article
+        """
+        return self.query(f'articles/{article_id}')
 
 
 def download_short(api: Optional[ChemrxivAPI] = None) -> None:
