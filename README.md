@@ -35,6 +35,11 @@ submitted lots of articles:
 
 ![Author Prolificness](author_prolificness.png)
 
+The following chart shows the popularity of different licenses
+over time:
+
+![Historical Licenses](historical_licenses.png)
+
 Finally, we can take the first date of authorship for each
 author then count at each month how many unique first time
 authors there are. Then, we can use a cumulative sum to show
