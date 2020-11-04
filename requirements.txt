@@ -4,3 +4,4 @@ matplotlib
 pandas
 seaborn
 click
+gender_guesser

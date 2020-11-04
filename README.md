@@ -61,7 +61,30 @@ submitted lots of articles:
 
 ![Author Prolificness](author_prolificness.png)
 
+### Licensing
+
 The following chart shows the popularity of different licenses
 over time:
 
 ![Historical Licenses](historical_licenses.png)
+
+### Gender Related
+
+The [gender-guesser](https://pypi.org/project/gender-guesser/) package
+was used to infer authors' genders based on their first name. This
+obviously comes with the caveat that some names can't be automatically
+assigned to the male/female dichotomy. The "mostly male" and "mostly female"
+results were respectively grouped with the male and female names, while
+the androgenous and unknown names were excluded.
+
+The first chart shows both the male and female first author frequencies
+by month.
+
+![Genders of First Authors by Month](genders_by_month.png.png)
+
+This chart shows the percentage of male first authors with respect
+to male + female first authors. It shows that even as the number of
+submissions changes, the ratio still is quite skewed towards male
+first authorship.
+
+![Male Percentage by Month](male_percentage_by_month.png)

@@ -117,7 +117,44 @@ def plot_cumulative_licenses(df, directory, institution_name):
     plt.savefig(os.path.join(directory, 'historical_licenses.png'), dpi=300)
 
 
-# TODO genders of authors with https://pypi.org/project/gender-guesser/ or https://pypi.org/project/Genderize/
+def _prepare_genders(df):
+    df = remove_current_month(df)
+    df.loc[df['first_author_inferred_gender'] == 'mostly_male', 'first_author_inferred_gender'] = 'male'
+    df.loc[df['first_author_inferred_gender'] == 'mostly_female', 'first_author_inferred_gender'] = 'female'
+    return df[df['first_author_inferred_gender'].isin({'male', 'female'})]
+
+
+def plot_gender_evolution(df, directory, institution_name):
+    plt.figure(figsize=(10, 6))
+
+    df = _prepare_genders(df)
+    data = df.groupby(['time', 'first_author_inferred_gender']).count()['id'].reset_index()
+    sns.lineplot(data=data, x='time', y='id', hue='first_author_inferred_gender')
+
+    plt.xticks(rotation=45)
+    plt.title(f'{institution_name} Inferred First Author Genders')
+    plt.ylabel('Articles')
+    plt.xlabel('Month')
+    plt.tight_layout()
+    plt.savefig(os.path.join(directory, 'genders_by_month.png'), dpi=300)
+
+
+def plot_gender_male_percentage(df, directory, institution_name):
+    plt.figure(figsize=(10, 6))
+    df = _prepare_genders(df)
+    nd = df.groupby(['time', 'first_author_inferred_gender']).count()['id'].reset_index().pivot(
+        index='time',
+        columns='first_author_inferred_gender',
+        values='id'
+    ).fillna(0).astype(int)
+    nd['ratio'] = nd['male'] / (nd['male'] + nd['female'])
+    sns.lineplot(data=nd, x='time', y='ratio')
+    plt.xticks(rotation=45)
+    plt.title(f'{institution_name} Inferred First Author Male/Female Ratio')
+    plt.ylabel('Male/Female Ratio')
+    plt.xlabel('Month')
+    plt.tight_layout()
+    plt.savefig(os.path.join(directory, 'male_percentage_by_month.png'), dpi=300)
 
 
 @click.command()
@@ -133,6 +170,8 @@ def main(token: Optional[str]):
     plot_cumulative_authors(df, HERE, institution_name=client.institution_name)
     plot_cumulative_licenses(df, HERE, institution_name=client.institution_name)
     plot_first_time_first_authors_by_month(df, HERE, institution_name=client.institution_name)
+    plot_gender_evolution(df, HERE, institution_name=client.institution_name)
+    plot_gender_male_percentage(df, HERE, institution_name=client.institution_name)
 
 
 if __name__ == '__main__':

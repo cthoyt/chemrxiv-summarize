@@ -124,6 +124,12 @@ class FigshareClient:
                 json.dump(preprint, file, indent=2)
 
     def process_articles(self):
+        from gender_guesser.detector import Detector
+        detector = Detector(case_sensitive=False)
+        # Possible gender determination alternatives:
+        # - https://gender-api.com/ (reference from https://twitter.com/AdamSci12/status/1323977415677382656)
+        # - https://genderize.io/
+
         rows = []
         for filename in tqdm(os.listdir(self.articles_long_directory)):
             path = os.path.join(self.articles_long_directory, filename)
@@ -135,15 +141,20 @@ class FigshareClient:
                 if custom_field['name'] == 'ORCID For Submitting Author':
                     orcid = custom_field['value']
 
+            first_author_name = j['authors'][0]['full_name']
+            first_author_inferred_gender = detector.get_gender(first_author_name.split(' ')[0])
+
             rows.append(dict(
                 id=j['id'],
                 title=j['title'],
                 posted=j['timeline']['posted'],
                 license=j['license']['name'],
                 orcid=orcid,
+                first_author_name=first_author_name,
+                first_author_inferred_gender=first_author_inferred_gender,
             ))
 
-        df = pd.DataFrame(rows)
+        df = pd.DataFrame(rows).sort_values('id')
         df.to_csv(os.path.join(self.institution_directory, 'articles_summary.tsv'), sep='\t', index=False)
         if self.institution == 259:
             df.to_csv(os.path.join(HERE, 'articles_summary.tsv'), sep='\t', index=False)
