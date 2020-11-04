@@ -26,12 +26,35 @@ that displays similar statistics and is automatically updated daily.
 
 ## Charts
 
-How many authors have contributed per month to ChemRxiv?
+How many papers were submitted each month to ChemRxiv?
+
+![Articles per Month](articles_per_month.png)
+
+How many unique authors have contributed per month to ChemRxiv?
 This only counts using the ORCID iDs of the first authors;
 it's pretty inconsistent what other identifying information
 is included in the metadata for each article.
 
 ![Unique Authors per Month](unique_authors_per_month.png)
+
+How many authors submitted more than once per month? This
+chart shows spikes in August, which I will guess is when
+most people are submitting before their summer breaks :) 
+
+![Percent Duplicate Authors per Month](percent_duplicate_authors_per_month.png)
+
+How many authors contributed for their first time each month?
+
+![First Time First Authors per Month](first_time_first_authors_per_month.png)
+
+How many first authors have historically contributed to ChemRxiv
+at each month? We can take the first date of authorship for each
+author then count at each month how many unique first time
+authors there are. Then, we can use a cumulative sum to show
+how many authors have contributed to ChemRxiv at any point in
+time.
+
+![Historical Authorship](historical_authorship.png)
 
 If we aggregate that data, we can ask how many authors have
 submitted lots of articles:
@@ -42,11 +65,3 @@ The following chart shows the popularity of different licenses
 over time:
 
 ![Historical Licenses](historical_licenses.png)
-
-Finally, we can take the first date of authorship for each
-author then count at each month how many unique first time
-authors there are. Then, we can use a cumulative sum to show
-how many authors have contributed to ChemRxiv at any point in
-time.
-
-![Historical Authorship](historical_authorship.png)
