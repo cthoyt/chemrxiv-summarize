@@ -184,9 +184,31 @@ def get_df(directory: str, exclude_current_month: bool = False) -> pd.DataFrame:
     return df
 
 
-def remove_current_month(df):
+def remove_current_month(df: pd.DataFrame) -> pd.DataFrame:
     today = datetime.date.today()
-    return df[df['time'] != f'{today.year - 2000}-{today.month:02}']
+    df = df[df['time'] != f'{today.year - 2000}-{today.month:02}']
+    return df
+
+
+def prepare_genders(df: pd.DataFrame) -> pd.DataFrame:
+    df = remove_current_month(df)
+    df.loc[df['first_author_inferred_gender'] == 'mostly_male', 'first_author_inferred_gender'] = 'male'
+    df.loc[df['first_author_inferred_gender'] == 'mostly_female', 'first_author_inferred_gender'] = 'female'
+    return df
+
+
+def assign_andy(df):
+    x = (df['first_author_inferred_gender'] == 'andy').count()
+    counter = 0
+
+    def _assign_andy(s: str) -> str:
+        if s != 'andy':
+            return s
+        if counter < x // 2:
+            return 'male'
+        return 'female'
+
+    df['first_author_inferred_gender'] = df['first_author_inferred_gender'].map(_assign_andy)
 
 
 def clean_orcid(x: str) -> str:

@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-from utils import FigshareClient, HERE, remove_current_month, token_option
+from utils import FigshareClient, HERE, prepare_genders, remove_current_month, token_option, assign_andy
 
 
 def plot_papers_by_month(df, directory, institution_name):
@@ -117,17 +117,11 @@ def plot_cumulative_licenses(df, directory, institution_name):
     plt.savefig(os.path.join(directory, 'historical_licenses.png'), dpi=300)
 
 
-def _prepare_genders(df):
-    df = remove_current_month(df)
-    df.loc[df['first_author_inferred_gender'] == 'mostly_male', 'first_author_inferred_gender'] = 'male'
-    df.loc[df['first_author_inferred_gender'] == 'mostly_female', 'first_author_inferred_gender'] = 'female'
-    return df[df['first_author_inferred_gender'].isin({'male', 'female'})]
-
-
 def plot_gender_evolution(df, directory, institution_name):
     plt.figure(figsize=(10, 6))
 
-    df = _prepare_genders(df)
+    df = prepare_genders(df)
+    assign_andy(df)
     data = df.groupby(['time', 'first_author_inferred_gender']).count()['id'].reset_index()
     sns.lineplot(data=data, x='time', y='id', hue='first_author_inferred_gender')
 
@@ -141,13 +135,13 @@ def plot_gender_evolution(df, directory, institution_name):
 
 def plot_gender_male_percentage(df, directory, institution_name):
     plt.figure(figsize=(10, 6))
-    df = _prepare_genders(df)
+    df = prepare_genders(df)
     nd = df.groupby(['time', 'first_author_inferred_gender']).count()['id'].reset_index().pivot(
         index='time',
         columns='first_author_inferred_gender',
         values='id'
     ).fillna(0).astype(int)
-    nd['ratio'] = nd['male'] / (nd['male'] + nd['female'])
+    nd['ratio'] = (nd['male'] + 0.5 * nd['andy']) / (nd['male'] + nd['female'] + nd['andy'])
     sns.lineplot(data=nd, x='time', y='ratio')
     plt.xticks(rotation=45)
     plt.title(f'{institution_name} Inferred First Author Male Percentage')
