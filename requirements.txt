@@ -3,3 +3,4 @@ tqdm
 matplotlib
 pandas
 seaborn
+click

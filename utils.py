@@ -4,12 +4,16 @@ import json
 import os
 from typing import Optional
 
+import click
 import requests
 from tqdm import tqdm
 
 HERE = os.path.abspath(os.path.dirname(__file__))
-articles_short_directory = os.path.join(HERE, 'articles_short')
-articles_long_directory = os.path.join(HERE, 'articles_long')
+FIGSHARE_DIRECTORY = os.path.join(HERE, 'figshare')
+os.makedirs(FIGSHARE_DIRECTORY, exist_ok=True)
+
+institution_option = click.option('--institution', type=int, default=259)
+directory_option = click.option('--directory', default=HERE, type=click.Path(file_okay=False, dir_okay=True))
 
 
 class ChemrxivAPI:
@@ -20,16 +24,19 @@ class ChemrxivAPI:
 
     base = 'https://api.figshare.com/v2'
 
-    def __init__(self, token=None, page_size: Optional[int] = None):
+    def __init__(self, token=None, page_size: Optional[int] = None, institution: Optional[int] = None):
         if token is None:
             with open(os.path.expanduser('~/.config/figshare/chemrxiv.txt'), 'r') as file:
                 token = file.read().strip()
 
         self.page_size = page_size or 500
-        #: corresponds to chemrxiv
-        self.institution = 259
+        #: default of 259 corresponds to chemrxiv
+        self.institution = institution or 259
         self.token = token
         self.headers = {'Authorization': f'token {self.token}'}
+
+        self.articles_short_directory = os.path.join(FIGSHARE_DIRECTORY, str(self.institution), 'articles_short')
+        self.articles_long_directory = os.path.join(FIGSHARE_DIRECTORY, str(self.institution), 'articles_long')
 
         r = requests.get(f'{self.base}/account', headers=self.headers)
         r.raise_for_status()
@@ -84,32 +91,24 @@ class ChemrxivAPI:
         """
         return self.query(f'articles/{article_id}')
 
+    def download_short(self) -> None:
+        os.makedirs(self.articles_short_directory, exist_ok=True)
+        for preprint in tqdm(self.all_preprints(), desc='Getting all articles_short'):
+            preprint_id = preprint['id']
+            path = os.path.join(self.articles_short_directory, f'{preprint_id}.json')
+            if os.path.exists(path):
+                continue
+            with open(path, 'w') as file:
+                json.dump(preprint, file, indent=2)
 
-def download_short(api: Optional[ChemrxivAPI] = None) -> None:
-    if api is None:
-        api = ChemrxivAPI()
+    def download_full(self) -> None:
+        os.makedirs(self.articles_long_directory, exist_ok=True)
+        for filename in tqdm(os.listdir(self.articles_short_directory)):
+            preprint_id = int(filename[:-len('.json')])
+            path = os.path.join(self.articles_long_directory, f'{preprint_id}.json')
+            if os.path.exists(path):
+                continue
 
-    os.makedirs(articles_short_directory, exist_ok=True)
-    for preprint in tqdm(api.all_preprints(), desc='Getting all articles_short'):
-        preprint_id = preprint['id']
-        path = os.path.join(articles_short_directory, f'{preprint_id}.json')
-        if os.path.exists(path):
-            continue
-        with open(path, 'w') as file:
-            json.dump(preprint, file, indent=2)
-
-
-def download_full(api: Optional[ChemrxivAPI] = None) -> None:
-    if api is None:
-        api = ChemrxivAPI()
-
-    os.makedirs(articles_long_directory, exist_ok=True)
-    for filename in tqdm(os.listdir(articles_short_directory)):
-        preprint_id = int(filename[:-len('.json')])
-        path = os.path.join(articles_long_directory, f'{preprint_id}.json')
-        if os.path.exists(path):
-            continue
-
-        preprint = api.preprint(preprint_id)
-        with open(path, 'w') as file:
-            json.dump(preprint, file, indent=2)
+            preprint = self.preprint(preprint_id)
+            with open(path, 'w') as file:
+                json.dump(preprint, file, indent=2)

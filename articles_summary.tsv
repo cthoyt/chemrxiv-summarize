@@ -421,6 +421,7 @@ id	title	posted	license	orcid
 12592418	Copper(II) Complexes of N-Propargyl Cyclam Ligands Reveal a Range of Coordination Modes and Colours, and Unexpected Reactivity	2020-07-02T08:07:44	CC BY-NC-ND 4.0	0000-0002-0767-5196
 8242871	Brain-Penetrating Peptide Shuttles Across the Blood-Brain Barrier and Extracellular-like Space	2019-06-12T12:45:11	CC BY-NC-ND 4.0	0000-0001-7552-363X
 12276464	Reversible Electrochemical Ion Intercalation at an Electrified Liquid|liquid Interface Functionalised with Porphyrin Nanostructures	2020-05-13T07:03:24	CC BY-NC-ND 4.0	0000-0001-7951-7085
+13173698	The Untargeted Capability of NMR Recognizes Adulterated Natural Products	2020-11-03T04:50:11	CC BY 4.0	0000-0003-1696-8828
 12921455	Specific Impulse and Absolute Chemical Hardness	2020-09-11T01:56:49	CC BY-NC-ND 4.0	0000-0003-3132-7754
 9933170	Polymerization-Induced Emission	2019-10-07T21:32:47	CC BY-NC-ND 4.0	0000-0001-6543-0042
 12173214	Persistent and Reversible Solid Iodine Electrodeposition in Nanoporous Carbons	2020-09-02T11:13:50	CC BY 4.0	0000-0003-0654-0940
@@ -758,6 +759,7 @@ id	title	posted	license	orcid
 8792117	Metal-Free Aryl Cross-Coupling Directed by Traceless Linkers	2019-07-08T13:50:18	CC BY-NC-ND 4.0	0000-0002-0367-337X
 12571241	Multitask Bioactivity Predictions Using Structural Chemical and Cell Morphology Information	2020-06-29T11:14:01	CC BY-NC-ND 4.0	0000-0002-9177-4241
 11625885	Predicting Binding from Screening Assays with Transformer Network Embeddings	2020-01-24T21:34:24	CC BY-NC-ND 4.0	0000-0003-0139-5262
+13176584	Liquid-Phase Exfoliation of Poly(Dicarbon Monofluoride) (C2F)n	2020-11-03T11:27:15	CC BY-NC-ND 4.0	0000-0002-4757-7152
 5388397	Evaluating Force-Field London Dispersion Coefficients Using the Exchange-Hole Dipole Moment Model	2017-09-11T21:50:02	CC BY 4.0	0000-0002-0205-952X
 11400405	Intrinsic Stacking Interactions of Natural and Artificial Nucleobases	2019-12-23T09:26:34	CC BY-NC-ND 4.0	0000-0001-7824-6906
 5518798	Distributed Representation of Chemical Fragments	2017-10-20T16:01:08	CC BY-NC-ND 4.0	0000-0001-7745-8747
@@ -1200,7 +1202,9 @@ id	title	posted	license	orcid
 12567746	Indoor Exposure to Commonly Used Disinfectants During the COVID-19 Pandemic	2020-06-29T12:43:43	CC BY-NC-ND 4.0	0000-0002-5235-9950
 6008222	Direct Assembly of Large Area Nanoparticle Arrays	2018-03-21T15:58:35	CC BY-NC-ND 4.0	0000-0002-8007-3247
 8015645	Electronic Structure, Electron-Phonon Coupling and Charge Transport in Crystalline Rubrene Under Mechanical Strain	2019-04-23T16:35:13	CC BY-NC-ND 4.0	0000-0002-5897-2924
+13160996	Squeezing out the Catalysts: The Disulphide Bond Exchange in Aryl Disulphides at High Hydrostatic Pressure	2020-11-03T09:45:48	CC BY-NC-ND 4.0	0000-0001-8234-2503
 12619376	Manganese-Catalyzed Ammonia Oxidation into Dinitrogen	2020-07-08T09:05:14	CC BY-NC-ND 4.0	0000-0001-9739-9588
+13176842	Aryl-substituted Triarsiranes: Synthesis and Reactivity	2020-11-03T11:35:21	CC BY-NC-ND 4.0	0000-0003-4937-2625
 12408650	Targeting SARS-CoV-2 Main Protease by Teicoplanin: A Mechanistic Insight by in Silico Studies	2020-06-03T12:56:37	CC BY-NC-ND 4.0	0000-0002-2927-8167
 9209450	Structural Evidence of Photoisomerization Pathways in Fluorescent Proteins	2019-08-02T16:33:38	CC BY-NC-ND 4.0	0000-0001-9342-5072
 7221953	Adiabatic Electronic Motion in Forming Covalent Bond	2018-10-23T13:18:16	CC BY-NC-ND 4.0	0000-0003-1864-4317
@@ -1360,6 +1364,7 @@ id	title	posted	license	orcid
 12546596	Aniline-Containing Derivatives of Parthenolide: Synthesis and Anti-Chronic Lymphocytic Leukaemia Activity	2020-06-29T08:30:39	CC BY-NC-ND 4.0	0000-0002-2626-5117
 5887243	Rigid and concave, 2,4-cis-substituted azetidine derivatives: A platform for asymmetric catalysis	2018-02-15T14:25:59	CC BY-NC-ND 4.0	0000-0002-2626-5117
 11328173	Assembly and Characterization of Polyelectrolyte Complex Micelles	2019-12-13T06:43:49	CC BY-NC-ND 4.0	0000-0001-8972-9532
+13175063	The Impact of Hydrogen Valence on Its Bonding and Transport in Molten Fluoride Salts	2020-11-03T06:13:15	CC BY-NC-ND 4.0	0000-0002-7683-1201
 12899432	Standard Molar Enthalpies of Formation of Halomethanes Based on Quantum Chemical Computations	2020-09-01T12:52:02	CC BY-NC-ND 4.0	https://orcid.org/0000-0002-0276-6531
 12156747	Potent and Selective N-Terminal BRD4 Bromodomain Inhibitors by Targeting Non-Conserved Residues and Structured Water Displacement	2020-04-23T05:28:01	CC BY-NC-ND 4.0	0000-0002-0163-4078
 7591190	Automatically Full Glycan Structural Determination with Logically Derived Sequence Tandem Mass Spectrometry	2019-01-16T17:24:55	CC BY-NC-ND 4.0	0000-0001-6503-8905
@@ -1539,6 +1544,7 @@ id	title	posted	license	orcid
 7355069	Mechanistic Study and Development of Catalytic Reactions of Sm(II)	2018-11-19T13:59:42	CC BY-NC-ND 4.0	0000-0003-2295-1336
 12053076	Copper-Graphene-TiO2 Hybrid Materials for Photocatalytically Assisted H2 Generation	2020-04-01T12:12:06	CC BY-NC-ND 4.0	0000-0002-0112-8570
 8285594	Transport Properties of Nanoporous, Chemically Forced Biological Lattices	2019-06-18T15:42:08	CC BY-NC-ND 4.0	0000-0003-2358-841X
+13175327	Metal-Bound or Free Ylides as Reaction Intermediates in Metal-Catalyzed [2,3]-Sigmatropic Rearrangements? It Depends.	2020-11-03T12:47:52	CC BY-NC-ND 4.0	0000-0002-9244-1318
 6954908	Prediction of Chemical Reactions Using Statistical Models of Chemical Knowledge	2018-08-10T14:47:11	CC BY 4.0	0000-0001-7621-0889
 9876635	Removal and Recovery of Phosphate and Fluoride from Water with Reusable Mesoporous Fe3O4@mSiO2@mLDH Composites as Sorbents	2019-09-23T16:13:31	CC BY-NC-ND 4.0	0000-0002-2969-8276
 11378583	QM/MM Molecular Dynamics Investigation of the Binding of Organic Phosphates to the 100 Diaspore Surface	2019-12-20T10:18:32	CC BY-NC-ND 4.0	0000-0002-5132-2961
@@ -2015,6 +2021,7 @@ id	title	posted	license	orcid
 7663124	Long-wavelength Fluorophores for Voltage Sensing	2019-02-11T16:37:54	CC BY-NC-ND 4.0	0000-0002-6556-7679
 11825136	"Amphiphilic	Small	Molecule	Assemblies	to	Enhance	the	Solubility	and	 Stability	of	Hydrophobic	Drugs"	2020-02-10T13:06:23	CC BY-NC-ND 4.0	0000-0003-0567-6029
 11728983	Learning from the Past: Possible Urgent Prevention and Treatment Options for Severe Acute Respiratory Infections Caused by 2019-nCoV	2020-01-27T13:11:15	CC BY-NC-ND 4.0	0000-0002-7078-6534
+13174415	Tumor Necrosis Factor Alpha Converting Enzyme (TACE) as Possible Therapeutic Target in SARS-CoV-2 Induced Acute Respiratory Distress Syndrome (ARDS)	2020-11-03T05:46:54	CC BY-NC-ND 4.0	0000-0002-8972-8131
 5758608	η^2 bonded Nickel(0) thiophene π-complexes - identifying the missing link in catalyst transfer polymerization	2018-05-03T14:01:41	CC BY-NC-ND 4.0	0000-0003-3408-9157
 8948831	Photoluminescence Emission Induced by Localized States in Halide Passivated Colloidal Two-Dimensional WS2 Nanoflakes	2019-07-19T13:21:13	CC BY-NC-ND 4.0	0000-0002-1710-9390
 8066747	To Bend or Not to Bend, the Dilemma of Multiple Bonds	2019-05-03T15:48:23	CC BY-NC-ND 4.0	0000-0002-1077-251X
@@ -2516,6 +2523,7 @@ id	title	posted	license	orcid
 12320024	AIE Stereoisomers with Huge Differences in Luminescence Behavior and Biomedical Activity	2020-05-20T04:44:54	CC BY-NC-ND 4.0	0000-0002-8414-5164
 7207001	Liquid Flow and Control Without Solid Walls	2019-07-19T12:56:17	CC BY-NC-ND 4.0	0000-0003-1121-1754
 12805280	Modified MAX Phase Synthesis for Environmentally Stable and Highly Conductive Ti3C2 MXene	2020-08-14T09:41:17	CC BY-NC-ND 4.0	0000-0002-1814-0242
+13176188	Total Synthesis of Tiacumicin B: Study of the Challenging β-Selective Glycosylations	2020-11-03T11:29:38	CC BY-NC-ND 4.0	0000-0003-2706-4007
 7995983	Visible-Light Photosensitized Aryl and Alkyl Decarboxylative Carbon-Heteroatom and Carbon-Carbon Bond Formations	2019-04-23T16:20:06	CC BY-NC-ND 4.0	0000-0002-0648-956X
 12536153	Adsorption of Pd (II) and Au (III) Ions by Commercial Tris(2-Aminoethyl) Amine Polystyrene Polymer Beads	2020-07-03T09:06:45	CC BY-NC-ND 4.0	0000-0003-3200-9176
 9702389	Accelerating AutoDock4 with GPUs and Gradient-Based Local Search	2019-08-23T14:58:29	CC BY-NC-ND 4.0	0000-0002-5964-7111
@@ -2641,6 +2649,7 @@ id	title	posted	license	orcid
 7228646	From Cyclic Nanorings to Single-Walled Carbon Nanotubes: Disclosing the Evolution of their Electronic Structure with the Help of Theoretical Methods	2018-10-19T14:12:42	CC BY-NC-ND 4.0	https://orcid.org/0000-0002-8340-1349
 12798734	Table-Top X-ray Spectroscopy of Benzene Radical Cation	2020-08-13T09:40:26	CC BY-NC-ND 4.0	0000-0002-9149-3191
 12192660	Repurposed Single Inhibitor for Serine Protease and Spike Glycoproteins of SAR-CoV-2	2020-04-27T06:05:59	CC BY-NC-ND 4.0	0000-0003-4486-2684
+13177367	Surface Ligand Removal in Atomic Layer Deposition of GaN Using Triethylgallium	2020-11-03T12:53:02	CC BY 4.0	0000-0002-7171-5383
 12451208	Chromate Conversion Coating and Alternatives as Corrosion-Resistant Treatments for Metal Parts	2020-06-11T04:41:15	CC BY-NC-ND 4.0	0000-0001-7073-5246
 12386144	Selective Electrocatalytic Reduction of Nitrogen to Hydrazine Using a Trinuclear Nickel Complex	2020-06-01T08:03:58	CC BY-NC-ND 4.0	0000-0002-9166-3349
 12142578	Smart Chemiluminescence Probes and Dual-Amplification of Signal for Detection of Amyloid Beta Species in Alzheimer’s Disease Model	2020-04-20T11:25:11	CC BY-NC-ND 4.0	0000-0002-3892-4108
@@ -3000,6 +3009,7 @@ id	title	posted	license	orcid
 12732293	Controlling Pd Morphology in Electrodeposition from Nanoparticles to Dendrites via the use of Mixed Solvents	2020-07-29T13:27:56	CC BY-NC-ND 4.0	0000-0002-4249-8383
 13005320	Sensing with Chirality Pure near Infrared Fluorescent Carbon Nanotubes	2020-10-16T13:36:53	CC BY-NC-ND 4.0	0000-0003-0638-9822
 11862900	Anion Templated Crystal Engineering of Halogen Bonding Tripodal Tris(halopyridinium) Compounds	2020-02-20T05:48:21	CC BY-NC-ND 4.0	0000-0003-2975-0887
+13176995	Non-Faradaic Promotion of Ethylene Hydrogenation Under Oscillating Potentials	2020-11-03T12:50:32	CC BY-NC-ND 4.0	0000-0002-1877-9206
 8796779	Discovering Ferro- and Piezoelectricity in Lead-Free Oxyhydrides Ln2H4O (Ln = Y, La)	2019-07-08T13:57:15	CC BY-NC-ND 4.0	0000-0002-6732-1453
 12678527	Command-Destruct Thermosets via Photoinduced Thiol-Catalyzed ß-Scission of Acyclic Benzylidene Acetals	2020-07-24T09:49:34	CC BY-NC-ND 4.0	0000-0002-8738-4750
 6845270	Expressing Raman Spectral Details Through Raman Parameter Information Diagram (RAPID)	2018-07-23T13:49:35	CC BY-NC-ND 4.0	0000-0001-7977-986X
@@ -3077,6 +3087,7 @@ id	title	posted	license	orcid
 12445586	Violet-Blue Aggregation-Induced Emission Emitters for Non-Doped OLEDs with CIEy Smaller than 0.046	2020-06-11T05:58:26	CC BY-NC-ND 4.0	0000-0001-7158-1808
 12006270	Interface Failure in Nacre-like Alumina	2020-03-20T06:01:02	CC BY-NC-ND 4.0	0000-0002-3363-3184
 11871402	Repurposing Therapeutics for COVID-19: Supercomputer-Based Docking to the SARS-CoV-2 Viral Spike Protein and Viral Spike Protein-Human ACE2 Interface	2020-03-11T04:43:42	CC BY-NC-ND 4.0	0000-0002-0777-7539
+13174286	1-(Aminomethyl)-Trans-Cyclooct-4-Ene, a New TCO Derivative for Target Visualization and Target Engagement Measurement in Cells	2020-11-03T05:30:01	CC BY-NC-ND 4.0	0000-0002-9733-5477
 7234901	Resonant Inelastic X-Ray Scattering and Non Resonant X-ray Emission Spectra from Coupled-Cluster (Damped) Response Theory	2018-10-23T13:58:02	CC BY-NC-ND 4.0	0000-0001-8524-0684
 5743638	Bulk Contributions Modulate the Sum-Frequency Generation Spectra of Interfacial Water on Model Sea-Spray Aerosols	2018-01-03T15:53:37	CC BY-NC-ND 4.0	0000-0002-4451-1203
 12401621	Liquid-Phase Peak Force Infrared Microscopy	2020-06-02T05:55:17	CC BY-NC-ND 4.0	0000-0001-7193-8651
@@ -3172,6 +3183,7 @@ id	title	posted	license	orcid
 7844720	Anomalous Cracking in a Metal-Organic Framework Glass	2019-03-15T14:04:05	CC BY-NC-ND 4.0	0000-0002-7500-5143
 9860753	Thermal Decomposition Kinetics of Glyphosate (GP) and its Metabolite Aminomethylphosphonic Acid (AMPA)	2019-11-25T12:59:16	CC BY-NC-ND 4.0	0000-0003-4284-4474
 11639931	Fluorescence of BODIPY Dyes in Gas Phase at near Ambient Conditions	2020-01-21T07:52:12	CC BY-NC-ND 4.0	0000-0002-9893-4498
+13176413	Multiple Objects Interacting with a Solidification Front	2020-11-03T11:19:53	CC BY-NC-ND 4.0	0000-0002-3363-3184
 9783155	Split the Charge Difference in Two! a Rule of Thumb for Adding Proper Amounts of Ions in MD Simulations	2019-09-09T21:01:49	CC BY-NC-ND 4.0	0000-0002-9971-4710
 12213914	Minisci C-H Alkylation of Heteroarenes Enabled by Dual Photoredox/bromide Catalysis in Micellar Solutions	2020-06-25T07:14:26	CC BY-NC-ND 4.0	0000-0002-7645-1356
 7653287	Thermodynamics of Chemical and Electrochemical Stability of Fe – Ge System Alloys	2019-01-31T16:13:23	CC BY-NC-ND 4.0	0000-0003-0335-3955
@@ -3238,6 +3250,7 @@ id	title	posted	license	orcid
 6281264	On the Lack of Beneficial Role of Rh Towards C-C Bond Cleavage During Low Temperature Ethanol Electrooxidation on Pt-Rh Nanoalloys	2018-05-18T11:37:16	CC BY-NC-ND 4.0	0000-0002-3468-811X
 13173596	Quaternary Charge-Transfer Complex Enables Photoenzymatic In-termolecular Hydroalkylation of Olefins	2020-11-02T12:17:14	CC BY-NC-ND 4.0	0000-0003-3560-355X
 8792192	Imidazolyl-Phenyl (IMP) Anions: A Modular Structure for Tuning Solubility and Coordinating Ability	2019-07-08T13:11:41	CC BY-NC-ND 4.0	0000-0001-6885-2021
+13175012	Global Diastereoconvergence in the Ireland–Claisen Rearrangement of Isomeric Enolates: Synthesis of Tetrasubstituted -Amino Acids	2020-11-03T06:48:19	CC BY-NC-ND 4.0	0000-0001-9837-1528
 12153021	Novel Structural Mechanism of Glutathione as a Potential Peptide Inhibitor to the Main Protease (Mpro): CoviD-19 Treatment, Molecular Docking and SAR Study	2020-04-21T12:51:33	CC BY-NC-ND 4.0	0000-0002-2436-8147
 5851857	Protein-Ligand Binding Enthalpies from Near-Millisecond Simulations: Analysis of a Preorganization Paradox	2018-02-05T14:53:36	CC BY 4.0	0000-0002-3375-1738
 12973178	Methylguanidinium at the Air/Water Interface: A Simulation Study with the Drude Polarizable Force Field	2020-09-18T13:02:24	CC BY-NC-ND 4.0	0000-0001-9639-2907
@@ -3827,6 +3840,7 @@ id	title	posted	license	orcid
 12151707	Improving Phase-Transfer Catalysis by Enhancing Non-Covalent Interactions	2020-04-23T21:26:32	CC BY-NC-ND 4.0	0000-0001-9178-5146
 7712258	Local Structure and Orientational Ordering in Liquid Bromoform	2019-02-13T17:04:02	CC BY-NC-ND 4.0	0000-0002-0714-7342
 9255209	Influence of the Para-Substituent in Lanthanoid Complexes of Bistetrazole Substituted Calix[4]arenes	2019-08-06T15:55:47	CC BY-NC-ND 4.0	0000-0001-5317-1637
+13177364	Guest Size Limitation in Metal-Organic Framework Crystal-Glass Composites	2020-11-03T13:22:04	CC BY-NC-ND 4.0	0000-0002-9528-6595
 11936175	Structural Contributions to Autocatalysis and Asymmetric Amplification in the Soai Reaction	2020-03-05T12:20:25	CC BY-NC-ND 4.0	0000-0002-1099-9765
 9747368	Make a Molecule: A Synthetic Organic and Medicinal Chemistry Workshop for High School Students	2019-08-30T15:06:40	CC BY-NC-ND 4.0	0000-0001-8394-8910
 7229054	Light-driven charge accumulation of a molecular Cu(I) complex for storage of photoredox equivalents	2019-01-10T14:59:51	CC BY-NC-ND 4.0	0000-0003-4989-5207
@@ -4612,6 +4626,7 @@ id	title	posted	license	orcid
 13008212	Modulation of Amyloidogenic Protein Self-Assembly Using Tethered Small Molecules	2020-09-28T13:08:02	CC BY-NC-ND 4.0	0000-0001-9852-6366
 7017482	Continuous Synthesis of Doped Layered Double Hydroxides in a Meso-Scale Flow Reactor	2018-08-29T16:33:36	CC BY 4.0	0000-0001-7621-0889
 12052803	Influence of VC and FEC Additives on Interphase Properties of Carbon in Li-Ion Cells Investigated by Combined EIS & EQCM-D	2020-04-01T11:36:35	CC BY-NC-ND 4.0	0000-0002-2200-5377
+13174601	Strong Electronic Coupling of Graphene Nanoribbons onto Basal Plane of Glassy Carbon Electrode	2020-11-03T06:27:57	CC BY-NC-ND 4.0	0000-0001-7296-0121
 9404945	Carbocations as Secondary Coordination Sphere Z-Type Ligands – Anion-Induced Au(I)/Au(III) Oxidation and Impact on Reactivity	2019-08-09T15:17:25	CC BY-NC-ND 4.0	0000-0003-4788-2998
 11413191	Visualization of Streams of Small Organic Molecules in Continuous-Flow Electrophoresis	2019-12-23T21:04:04	CC BY-NC-ND 4.0	0000-0001-7423-4609
 12573701	Probing Multivalent Lectin-Carbohydrate Binding via Multifunctional Glycan-Gold Nanoparticles: Implications for Blocking Virus Infection	2020-06-29T10:22:38	CC BY-NC-ND 4.0	0000-0003-3314-9242
@@ -4705,6 +4720,7 @@ id	title	posted	license	orcid
 11608782	Mechanochemical Synthesis of Short DNA Fragments	2020-01-17T23:00:48	CC BY-NC-ND 4.0	0000-0002-3921-7915
 9438611	The Aggregation of Striped Nanoparticles in Mixed Phospholipid Bilayers	2019-12-17T07:38:06	CC BY-NC-ND 4.0	0000-0003-0302-9311
 13166807	Pillar[5]arene-Modified Gold Nanorods as Nanocarriers for Multi-Modal Imaging-Guided Synergistic Photodynamic-Photothermal Therapy	2020-11-02T04:43:04	CC BY-NC-ND 4.0	0000-0001-6542-1488
+13176554	Excited State Absorption of Uracil in the Gas Phase: Mapping the Main Decay Paths by Different Electronic Structure Methods	2020-11-03T11:22:48	CC BY-NC-ND 4.0	0000-0002-4487-897X
 12009390	Synthesis of All-carbon Disubstituted Bicyclo[1.1.1]pentanes by Iron-Catalyzed Kumada CrossCoupling	2020-03-20T11:07:12	CC BY-NC-ND 4.0	0000-0002-4149-0494
 9626492	Fast and Quantitative Phospholipidomic Analysis of SH-SY5Y Neuroblastoma Cell Cultures Using LC-MS/MS and 31P NMR	2019-11-08T16:57:09	CC BY-NC-ND 4.0	0000-0003-2517-1060
 12894818	The tmQM Dataset - Quantum Geometries and Properties of 86k Transition Metal Complexes	2020-08-31T10:16:39	CC BY-NC-ND 4.0	0000-0002-3389-0543
@@ -4864,6 +4880,7 @@ id	title	posted	license	orcid
 7215065	Low Energy Optical Excitations as an Indicator of Structural Changes Initiated at the Termini of Amyloid Proteins	2018-10-17T14:19:11	CC BY-NC-ND 4.0	0000-0001-5559-3972
 8206634	Light-Driven Deracemization Enabled by Excited-State Electron Transfer	2019-05-31T15:32:10	CC BY-NC-ND 4.0	0000-0003-1044-4900
 5513581	Mol2vec: Unsupervised Machine Learning Approach with Chemical Intuition	2017-10-23T15:06:41	CC BY-NC-ND 4.0	0000-0003-2044-7670
+13175207	In Silico Exploration of Efficacious Inhibitors for SARS-CoV-2’s Papain-like Protease	2020-11-03T09:05:20	CC BY-NC-ND 4.0	0000-0002-9414-5379
 7777085	(Z)-N'-(1H-Benzo[d]imidazol-2-Yl)-Arylimidamide Adducts of 2-Aminobenzimidazole and Aromatic Nitriles: Structural and Spectroscopic Proof of Regiochemical and Stereochemical Outcomes	2019-02-28T17:20:42	CC BY-NC-ND 4.0	0000-0003-3445-2104
 12905768	Predicting Nanoparticle Uptake by Biological Membranes: Theory and Simulation	2020-09-02T12:41:24	CC BY-NC-ND 4.0	orcid.org/0000-0002-2528-7111
 9724061	Operando Diffuse Reflectance UV-VIS Spectroelectrochemistry for Investigating Oxygen Evolution Electrocatalysts	2019-09-09T16:10:25	CC BY-NC-ND 4.0	0000-0003-1273-803X
@@ -5772,6 +5789,7 @@ id	title	posted	license	orcid
 7629467	Intrinsic doping limit and defect-assisted luminescence in Cs4PbBr6	2019-04-24T20:21:47	CC BY-NC-ND 4.0	0000-0003-3848-8163
 6850109	pywindow: Automated Structural Analysis of Molecular Pores	2018-07-23T13:50:28	CC BY-NC 4.0	0000-0001-7683-7630
 12151809	MOF-Mediated Synthesis of Supported Fe-doped Pd Nanoparticles under Mild Conditions for Magnetically Recoverable Catalysis	2020-04-21T12:50:14	CC BY-NC-ND 4.0	0000-0001-7855-1003
+13175807	X-Ray Excited Luminescence Spectroscopy and Imaging with NaGdF4:Eu and Tb	2020-11-03T09:08:46	CC BY-NC-ND 4.0	0000-0002-0858-1298
 12024738	Dipole Field Interactions Determine the CO2 Reduction Activity of 2D FeNC Single Atom Catalysts	2020-03-27T05:07:00	CC BY-NC-ND 4.0	0000-0001-8242-0161
 12865688	Ligand Design for Specific MHC Class I Molecules on the Cell Surface	2020-08-26T11:06:33	CC BY-NC-ND 4.0	0000-0002-1821-5427
 13078004	Comparative Efficacy of Montmorillonite, Calcium Hydroxide, Calcium Carbonate in pH Restoration of Acidified Freshwater Bodies	2020-10-13T07:03:54	CC BY-NC-ND 4.0	0000-0002-2162-9057
@@ -5809,6 +5827,7 @@ id	title	posted	license	orcid
 11406546	Selenolysine: A New Tool for Traceless Isopeptide Bond Formation	2019-12-24T19:32:28	CC BY-NC-ND 4.0	0000-0002-6373-9318
 12436079	Chemical Robotics Enabled Exploration of Stability and Photoluminescent Behavior in Multicomponent Hybrid Perovskites via Machine Learning	2020-08-14T07:20:10	CC BY-NC-ND 4.0	0000-0003-2570-4592
 11962467	Synthesis and Binding Studies of a Novel Highly Selective Ag(I) Ligand	2020-03-11T05:04:18	CC BY-NC-ND 4.0	0000-0003-2379-669X
+13161956	High-Pressure Nucleation of Low-Density Polymorphs	2020-11-02T14:10:38	CC BY-NC-ND 4.0	0000-0002-1439-7278
 6940379	The Master Key to the Problem of Reversible Chemical Hydrogen Storage is 12 kJ (mol H<sub>2</sub>)<sup>-1</sup>	2019-11-29T06:53:51	CC BY-NC-ND 4.0	0000-0002-6944-2240
 11303606	Benchmarking the Acceleration of Materials Discovery by Sequential Learning	2019-12-16T23:37:57	CC BY-NC-ND 4.0	0000-0002-2863-5265
 10031789	Alchemical Hydration Free Energy Calculations Using Molecular Dynamics with Explicit Polarization and Induced Polarity Decoupling: An On-the-Fly Approach	2020-01-07T07:19:13	CC BY-NC-ND 4.0	0000-0003-3708-6517
@@ -6169,6 +6188,7 @@ id	title	posted	license	orcid
 12280289	Optimization of a New Reactive Force Field for Silver - Based Materials	2020-05-13T07:12:52	CC BY-NC-ND 4.0	0000-0001-5736-9202
 10007033	A Possible Mechanism behind the Discovery of Prussian Blue	2019-10-23T15:51:23	CC BY-NC-ND 4.0	0000-0002-5384-8596
 9985496	Photocontrolled Radical Polymerization from Hydridic C–H Bonds	2019-10-21T18:48:54	CC BY-NC-ND 4.0	0000-0002-2222-3825
+13146404	Data-science driven autonomous process optimization	2020-11-03T09:53:19	CC BY-NC-ND 4.0	0000-0002-1393-9493
 8230235	Photocatalytic Alkylation of Pyrroles and Indoles with α-Diazo Esters	2019-06-06T15:44:54	CC BY-NC-ND 4.0	0000-0002-5197-4222
 8332490	Molecular Doping of PCPDT-BT Copolymers: Comparison of Molecular Complexes with and Without Integer Charge Transfer	2019-06-27T15:37:35	CC BY-NC-ND 4.0	0000-0001-8438-4416
 9904781	A Coherent Picture of the Hydrogen Oxidation and Evolution Reactions in Aqueous Solutions	2019-09-27T21:10:38	CC BY-NC-ND 4.0	0000-0002-6491-5504
@@ -6193,6 +6213,7 @@ id	title	posted	license	orcid
 9938969	‘Ring Breaker’: Assessing Synthetic Accessibility of the Ring System Chemical Space	2019-10-23T19:22:46	CC BY 4.0	0000-0003-0403-4067
 11356703	Dithiasuccinoyl-Caged Amines Enables COS/H2S Release Lacking Electrophilic Byproducts	2019-12-18T12:09:28	CC BY-NC-ND 4.0	0000-0003-3604-653X
 8943560	Rethinking Basic Concepts - Hydrogenation of Alkenes Catalyzed by Bench-Stable Alkyl Mn(I) Complexes	2019-07-18T15:21:44	CC BY-NC-ND 4.0	0000-0003-0872-6159
+13176773	Modification of TiO2 with Metal Chalcogenide Nanoclusters for Hydrogen Evolution	2020-11-03T11:32:42	CC BY-NC-ND 4.0	0000-0002-5224-8580
 11310860	Mechanism of the HF Pulse in the Thermal Atomic Layer Etch of HfO2 and ZrO2: A First Principles Study	2019-12-12T05:34:22	CC BY-NC-ND 4.0	0000-0002-5224-8580
 11860221	Organocatalyzed Birch Reduction Driven by Visible Light	2020-02-19T06:24:26	CC BY-NC-ND 4.0	0000-0003-2451-7090
 7959110	Systematic Exploration of the Mechanical Properties of 13,621 Inorganic Compounds	2019-07-22T15:22:19	CC BY-NC-ND 4.0	0000-0001-5318-3910
@@ -6253,6 +6274,7 @@ id	title	posted	license	orcid
 9114413	Highly Porous Hybrid Metallosilicate Materials Prepared by Non-Hydrolytic Sol-Gel: Hydrothermal Stability and Catalytic Properties in Ethanol Dehydration	2019-07-26T16:01:52	CC BY-NC 4.0	0000-0001-6500-2996
 11674041	Ring-Opening Metathesis Polymerization Derived Hierarchically Porous Carbon-Foams	2020-01-23T05:02:23	CC BY-NC 4.0	0000-0003-1873-5200
 5519041	Synthesis of RNA nucleotides in plausible prebiotic conditions from ab initio computer simulations	2018-04-27T14:31:35	CC BY-NC-ND 4.0	0000-0002-2836-9913
+13174922	A Straightforward Methodology to Overcome Solubility Challenges for N-Terminal Cysteinyl Peptide Segments Used in Native Chemical Ligation	2020-11-03T06:39:32	CC BY-NC-ND 4.0	0000-0002-2647-0188
 12865016	Kinase Inhibitors Can Inhibit SARS-CoV-2 Mpro: A Theoretical Study	2020-08-26T10:45:42	CC BY-NC-ND 4.0	orcid.org/0000-0003-4946-5311
 12119040	Critical Assessment of Artificial Intelligence Methods for Prediction of hERG Channel Inhibition in the ‘Big Data’ Era	2020-04-16T05:13:23	CC BY 4.0	0000-0003-2466-1711
 8325251	Cyclopropanation of Terminal Alkenes via Sequential Atom Transfer Radical Addition – 1,3-Elimination	2019-06-27T15:32:07	CC BY-NC-ND 4.0	0000-0002-9069-7109
@@ -6549,5 +6571,6 @@ id	title	posted	license	orcid
 6230627	Toward Learned Chemical Perception of Force Field Typing Rules	2018-10-15T17:44:35	CC BY 4.0	0000-0002-1083-5533
 12458579	Persistent Organic Room-Temperature Phosphorescence in Cyclohexane-Trans-1,2-Bisphthalimide Derivatives: The Dramatic Impact of Heterochiral vs. Homochiral Interactions	2020-06-12T06:27:58	CC BY-NC-ND 4.0	0000-0001-7847-2911
 11281643	Tuning the Bonding of a μ-Mesityl Ligand on Dicopper(I) through a Proton-Responsive Expanded PNNP Pincer Ligand	2019-12-04T06:29:55	CC BY-NC-ND 4.0	0000-0002-6641-4092
+13173674	Transformer: Linking Atom Mapping and Neural Machine Translation	2020-11-03T04:43:19	CC BY-NC-ND 4.0	0000-0002-9194-0115
 8239829	Multipolar/Polarizable Molecular Dynamics Simulations of Liquid-Liquid Extraction of Benzene from Hydrocarbons Using Ionic Liquids	2019-06-07T15:08:21	CC BY-NC-ND 4.0	0000-0001-6629-3430
 7411172	Machine Learning Accelerated Genetic Algorithms for Computational Materials Search	2018-12-10T20:15:44	CC BY 4.0	0000-0002-2032-8949

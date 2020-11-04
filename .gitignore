@@ -129,5 +129,6 @@ dmypy.json
 .pyre/
 
 # Downloaded data
-articles_short/
-articles_long/
+biorxiv/
+figshare/
+.DS_Store

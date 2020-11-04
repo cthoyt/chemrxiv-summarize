@@ -1,13 +1,19 @@
 import json
 import os
 
+import click
 import pandas as pd
 from tqdm import tqdm
 
-from utils import HERE, articles_long_directory
+from utils import FIGSHARE_DIRECTORY, HERE, institution_option
 
 
-def main():
+@click.command()
+@institution_option
+def main(institution: int):
+    institution_directory = os.path.join(FIGSHARE_DIRECTORY, str(institution))
+    articles_long_directory = os.path.join(institution_directory, 'articles_long')
+
     rows = []
     for filename in tqdm(os.listdir(articles_long_directory)):
         path = os.path.join(articles_long_directory, filename)
@@ -28,7 +34,9 @@ def main():
         ))
 
     df = pd.DataFrame(rows)
-    df.to_csv(os.path.join(HERE, 'articles_summary.tsv'), sep='\t', index=False)
+    df.to_csv(os.path.join(institution_directory, 'articles_summary.tsv'), sep='\t', index=False)
+    if institution == 259:
+        df.to_csv(os.path.join(HERE, 'articles_summary.tsv'), sep='\t', index=False)
 
 
 if __name__ == '__main__':
