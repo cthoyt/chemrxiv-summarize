@@ -42,7 +42,7 @@ def plot_authors_by_month(df, directory):
     sns.barplot(data=authors_by_month, x='time', y='orcid')
     plt.title('ChemRxiv Monthly Unique First Authorship')
     plt.xlabel('Month')
-    plt.ylabel('Number Unique First Authors Submitting')
+    plt.ylabel('Unique First Authors')
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.savefig(os.path.join(directory, 'unique_authors_per_month.png'), dpi=300)
@@ -52,11 +52,11 @@ def plot_prolific_authors(df, directory):
     # Who's prolific on chemrxiv?
     plt.figure(figsize=(10, 6))
     author_frequencies = df.groupby('orcid')['id'].count().sort_values(ascending=False)
-    sns.histplot(author_frequencies, kde=False, binwidth=3)
+    sns.histplot(author_frequencies, kde=False, binwidth=4)
     plt.title('ChemRxiv First Author Prolificness')
     plt.ylabel('Frequency')
-    plt.xlabel('Number of Articles Submitted to ChemRxiv')
-    plt.yscale('log')
+    plt.xlabel('Articles')
+    plt.xscale('log')
     plt.tight_layout()
     plt.savefig(os.path.join(directory, 'author_prolificness.png'), dpi=300)
 
@@ -71,7 +71,7 @@ def plot_cumulative_authors(df, directory):
     plt.xticks(rotation=45)
 
     plt.title('ChemRxiv Historical Unique First Authorship')
-    plt.ylabel('Historical Unique First Authors')
+    plt.ylabel('Unique First Authors')
     plt.xlabel('Month')
     plt.tight_layout()
     plt.savefig(os.path.join(directory, 'historical_authorship.png'), dpi=300)
@@ -87,7 +87,7 @@ def plot_cumulative_licenses(df, directory):
 
     plt.xticks(rotation=45)
     plt.title('ChemRxiv Historical Licenses')
-    plt.ylabel('Historical Licenses')
+    plt.ylabel('Articles')
     plt.xlabel('Month')
     plt.tight_layout()
     plt.savefig(os.path.join(directory, 'historical_licenses.png'), dpi=300)
