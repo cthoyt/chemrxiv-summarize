@@ -17,6 +17,9 @@ python 03_visualize.py
 Downloading takes a bit of time (40 minutes, maybe?) but there's
 a tqdm bar to keep you entertained in the mean time.
 
+I did a full write-up on the experience of writing this code and the results
+in [this blog post](https://cthoyt.com/2020/04/15/summarizing-chemrxiv.html).
+
 **See also** the [ChemRxiv dashboard](https://chemrxiv-dashboard.github.io)
 ([source code](https://github.com/chemrxiv-dashboard/chemrxiv-dashboard.github.io))
 that displays similar statistics and is automatically updated daily.
