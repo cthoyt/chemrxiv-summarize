@@ -30,7 +30,7 @@ is included in the metadata for each article.
 
 ![Unique Authors per Month](unique_authors_per_month.png)
 
-If we aggregate that data, we can ask how man authors have
+If we aggregate that data, we can ask how many authors have
 submitted lots of articles:
 
 ![Author Prolificness](author_prolificness.png)
