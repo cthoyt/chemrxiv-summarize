@@ -43,7 +43,7 @@ class FigshareClient:
         self.institution = institution_details['id']
         self.institution_name = institution_details['name']
 
-        self.institution_directory = os.path.join(FIGSHARE_DIRECTORY, str(self.institution))
+        self.institution_directory = os.path.join(FIGSHARE_DIRECTORY, self.institution_name.lower())
         self.articles_short_directory = os.path.join(self.institution_directory, 'articles_short')
         self.articles_long_directory = os.path.join(self.institution_directory, 'articles_long')
 
@@ -156,8 +156,6 @@ class FigshareClient:
 
         df = pd.DataFrame(rows).sort_values('id')
         df.to_csv(os.path.join(self.institution_directory, 'articles_summary.tsv'), sep='\t', index=False)
-        if self.institution == 259:
-            df.to_csv(os.path.join(HERE, 'articles_summary.tsv'), sep='\t', index=False)
 
     def get_df(self):
         return get_df(self.institution_directory)

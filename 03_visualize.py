@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-from utils import FigshareClient, HERE, prepare_genders, remove_current_month, token_option, assign_andy
+from utils import FigshareClient, assign_andy, prepare_genders, remove_current_month, token_option
 
 
 def plot_papers_by_month(df, directory, institution_name):
@@ -157,15 +157,15 @@ def main(token: Optional[str]):
     client = FigshareClient(token=token)
     df = client.get_df()
 
-    plot_unique_authors_per_month(df, HERE, institution_name=client.institution_name)
-    plot_papers_by_month(df, HERE, institution_name=client.institution_name)
-    plot_x(df, HERE, institution_name=client.institution_name)
-    plot_prolific_authors(df, HERE, institution_name=client.institution_name)
-    plot_cumulative_authors(df, HERE, institution_name=client.institution_name)
-    plot_cumulative_licenses(df, HERE, institution_name=client.institution_name)
-    plot_first_time_first_authors_by_month(df, HERE, institution_name=client.institution_name)
-    plot_gender_evolution(df, HERE, institution_name=client.institution_name)
-    plot_gender_male_percentage(df, HERE, institution_name=client.institution_name)
+    plot_unique_authors_per_month(df, client.institution_directory, institution_name=client.institution_name)
+    plot_papers_by_month(df, client.institution_directory, institution_name=client.institution_name)
+    plot_x(df, client.institution_directory, institution_name=client.institution_name)
+    plot_prolific_authors(df, client.institution_directory, institution_name=client.institution_name)
+    plot_cumulative_authors(df, client.institution_directory, institution_name=client.institution_name)
+    plot_cumulative_licenses(df, client.institution_directory, institution_name=client.institution_name)
+    plot_first_time_first_authors_by_month(df, client.institution_directory, institution_name=client.institution_name)
+    plot_gender_evolution(df, client.institution_directory, institution_name=client.institution_name)
+    plot_gender_male_percentage(df, client.institution_directory, institution_name=client.institution_name)
 
 
 if __name__ == '__main__':
