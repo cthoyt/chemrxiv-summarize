@@ -80,7 +80,7 @@ the androgenous and unknown names were excluded.
 The first chart shows both the male and female first author frequencies
 by month.
 
-![Genders of First Authors by Month](genders_by_month.png.png)
+![Genders of First Authors by Month](genders_by_month.png)
 
 This chart shows the percentage of male first authors with respect
 to male + female first authors. It shows that even as the number of
